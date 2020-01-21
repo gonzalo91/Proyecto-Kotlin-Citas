@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/mainLayoutId"
+    android:background="@drawable/login_background"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+
+    <TextView android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/whiteTransparent"
+        android:layout_weight="2"
+        android:padding="8dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="Bienvenido" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="@color/whiteTransparent"
+        android:layout_weight="2"
+        android:layout_height="0dp">
+
+
+
+
+        <Button
+            android:id="@+id/createAppointment"
+            android:onClick="registerSchedule"
+            android:drawableStart="@drawable/add_icon"
+            style="@style/MenuButton"
+            android:text="Registrar Cita" />
+
+        <Button
+            style="@style/MenuButton"
+            android:onClick="mySchedule"
+            android:layout_marginVertical="30sp"
+            android:drawableStart="@drawable/library_books"
+            android:text="Mis Citas" />
+
+        <Button
+            style="@style/MenuButton"
+            android:onClick="logOut"
+            android:drawableStart="@drawable/ic_power_off"
+            android:text="Cerrar Sesion" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_gradient"
+    android:id="@+id/layoutCreateAppointment"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".CreateAppointmentActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/whiteTransparent"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="Reservar Cita" />
+
+    <include layout="@layout/activity_create_appointment_step_one"></include>
+
+    <include layout="@layout/activity_create_appointment_step_two"></include>
+
+    <include layout="@layout/activity_create_appointment_step_three"></include>
+
+</LinearLayout>
